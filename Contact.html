@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact NASA - Get in touch with the National Aeronautics and Space Administration">
+  <title>Contact - NASA</title>
+  <link rel="icon" href="./assets/images/nasa-logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Oswald:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/77d3034ac0.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./contact.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav" role="navigation">
+      <div class="nav__logo">
+        <img src="./assets/images/nasa-logo.svg" alt="NASA Logo" width="48" height="48">
+      </div>
+      
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="nav__toggle-icon"></span>
+      </button>
+      
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="./index.html" class="nav__link">Home</a></li>
+        <li><a href="./gallery.html" class="nav__link">Gallery</a></li>
+        <li><a href="./mission.html" class="nav__link">Mission</a></li>
+        <li><a href="./earth.html" class="nav__link">Earth</a></li>
+        <li><a href="./space.html" class="nav__link">Space</a></li>
+        <li><a href="./contact.html" class="nav__link nav__link--active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="contact-hero">
+      <img src="./assets/images/TELEMMGLPICT000296138843_trans_NvBQzQNjv4BqRo0U4xU-30oDveS4pXV-VpwnSGRe9-02fQXnA1Qxazk.jpeg" 
+           alt="NASA control room" 
+           class="contact-hero__image"
+           loading="eager">
+    </section>
+
+    <section class="contact-form-section">
+      <div class="container">
+        <form class="contact-form" id="contactForm">
+          <h2 class="contact-form__title">Get in Touch</h2>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name" class="form-label">First Name</label>
+              <input type="text" id="name" name="name" class="form-input" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="surname" class="form-label">Last Name</label>
+              <input type="text" id="surname" name="surname" class="form-input" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" id="email" name="email" class="form-input" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="phone" class="form-label">Phone (Optional)</label>
+              <input type="tel" id="phone" name="phone" class="form-input">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message" class="form-label">Message</label>
+            <textarea id="message" name="message" class="form-textarea" rows="5" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--large">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="contact-info-section">
+      <div class="container">
+        <div class="contact-content">
+          <div class="contact-banner"></div>
+          
+          <article class="contact-text">
+            <h1>Contact NASA</h1>
+            
+            <p>
+              The NASA Communications Office receives thousands of communications each week from all over the world and we endeavor to provide timely information and answers to questions. However, we encourage you to use the NASA Web site for finding the information you are seeking or the answers to your questions before submitting a request for information.
+            </p>
+
+            <h3>Additional Resources</h3>
+            <ul class="resource-list">
+              <li>
+                <a href="https://www.nasa.gov/audience/forstudents/postsecondary/features/F_Astronaut_Requirements.html" 
+                   target="_blank" 
+                   rel="noopener noreferrer">
+                  How to Become an Astronaut
+                </a>
+              </li>
+              <li>
+                <a href="https://www.nasa.gov/what-is-artemis" 
+                   target="_blank" 
+                   rel="noopener noreferrer">
+                  Artemis Program
+                </a>
+              </li>
+            </ul>
+
+            <h3>Recognition for Boy Scouts and Girl Scouts</h3>
+            <p>
+              NASA recognizes Boy Scouts earning the prestigious Eagle Rank and Girl Scouts earning the prestigious Gold Award. Certificates may be downloaded on the honor system and should only be downloaded after the scout has earned the award. Please be advised that we are no longer producing paper copies of the certificates.
+            </p>
+
+            <div class="contact-details">
+              <h3>NASA Headquarters</h3>
+              <address>
+                <strong>Mary W. Jackson NASA Headquarters</strong><br>
+                300 E. Street SW, Suite 5R30<br>
+                Washington, DC 20546<br>
+                <br>
+                <a href="tel:+12023580001">Office: (202) 358-0001</a><br>
+                <span>Fax: (202) 358-4338</span>
+              </address>
+            </div>
+
+            <a href="https://www.nasa.gov/content/submit-a-question-for-nasa" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="btn btn--primary">
+              Submit a Question to NASA
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2023 by NASA. Powered and secured by NASA</p>
+    </div>
+  </footer>
+  <script src="./scripts/main.js"></script>
+</body>
+</html>

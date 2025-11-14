@@ -1,0 +1,336 @@
+.contact-hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.contact-hero__image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.contact-form-section {
+  padding: var(--spacing-xl) 0;
+  background: linear-gradient(to bottom, #f9fafb 0%, white 100%);
+}
+
+.contact-form {
+  max-width: 700px;
+  margin: 0 auto;
+  background: white;
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-md);
+}
+
+.contact-form__title {
+  font-family: 'Oswald', sans-serif;
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+  color: var(--color-text);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.form-label {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--color-text);
+}
+
+.form-input,
+.form-textarea {
+  padding: 0.75rem;
+  border: 2px solid #e5e7eb;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.btn--large {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.1rem;
+  margin-top: var(--spacing-md);
+}
+
+.contact-info-section {
+  padding: var(--spacing-xl) 0;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.contact-banner {
+  width: 100%;
+  height: 250px;
+  border-radius: var(--border-radius);
+  background-image: url('./assets/images/about-nasa.jpg');
+  background-size: cover;
+  background-position: center;
+  box-shadow: var(--shadow-md);
+}
+
+.contact-text {
+  background: white;
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-sm);
+}
+
+.contact-text h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text);
+}
+
+.contact-text h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5rem;
+  margin-top: var(--spacing-lg);
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-text);
+}
+
+.contact-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: var(--spacing-md);
+  text-align: justify;
+}
+
+.resource-list {
+  list-style: none;
+  padding: 0;
+  margin: var(--spacing-md) 0;
+}
+
+.resource-list li {
+  margin-bottom: var(--spacing-sm);
+}
+
+.resource-list a {
+  color: var(--color-primary);
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.resource-list a::before {
+  content: '→';
+  font-weight: bold;
+}
+
+.resource-list a:hover {
+  color: var(--color-text);
+  text-decoration: underline;
+}
+
+.contact-details {
+  background: #f9fafb;
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius);
+  margin: var(--spacing-lg) 0;
+}
+
+.contact-details h3 {
+  margin-top: 0;
+}
+
+.contact-details address {
+  font-style: normal;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+.contact-details a {
+  color: var(--color-primary);
+  transition: color 0.3s ease;
+}
+
+.contact-details a:hover {
+  color: var(--color-text);
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
+  }
+
+  .contact-form-section {
+    padding: var(--spacing-lg) 0;
+  }
+
+  .contact-form {
+    padding: var(--spacing-md);
+  }
+
+  .contact-form__title {
+    font-size: 1.75rem;
+  }
+
+  .contact-info-section {
+    padding: var(--spacing-lg) 0;
+  }
+
+  .contact-banner {
+    height: 200px;
+  }
+
+  .contact-text {
+    padding: var(--spacing-md);
+  }
+
+  .contact-text h1 {
+    font-size: 1.75rem;
+  }
+
+  .contact-text h3 {
+    font-size: 1.25rem;
+  }
+
+  .contact-text p,
+  .resource-list a {
+    font-size: 1rem;
+  }
+
+  .contact-details {
+    padding: var(--spacing-sm);
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-hero {
+    max-height: 300px;
+  }
+
+  .contact-form-section {
+    padding: var(--spacing-md) 0;
+  }
+
+  .contact-form {
+    padding: var(--spacing-sm);
+  }
+
+  .contact-form__title {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .form-row {
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .form-label {
+    font-size: 0.9rem;
+  }
+
+  .form-input,
+  .form-textarea {
+    padding: 0.65rem;
+    font-size: 0.95rem;
+  }
+
+  .btn--large {
+    padding: 0.85rem;
+    font-size: 1rem;
+  }
+
+  .contact-info-section {
+    padding: var(--spacing-md) 0;
+  }
+
+  .contact-banner {
+    height: 180px;
+  }
+
+  .contact-text {
+    padding: var(--spacing-sm);
+  }
+
+  .contact-text h1 {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .contact-text h3 {
+    font-size: 1.125rem;
+    margin-top: var(--spacing-md);
+  }
+
+  .contact-text p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .resource-list {
+    margin: var(--spacing-sm) 0;
+  }
+
+  .resource-list a {
+    font-size: 0.95rem;
+  }
+
+  .contact-details {
+    padding: var(--spacing-sm);
+    margin: var(--spacing-md) 0;
+  }
+
+  .contact-details address {
+    font-size: 0.95rem;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .contact-form {
+    max-width: 650px;
+  }
+
+  .form-row {
+    gap: var(--spacing-md);
+  }
+}
+
+@media (min-width: 901px) {
+  .contact-form {
+    max-width: 700px;
+  }
+
+  .contact-banner {
+    height: 280px;
+  }
+}
